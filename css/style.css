@@ -6,3 +6,76 @@
     box-sizing: border-box;
 }
 
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    
+}
+
+#heading{
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid blue;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+#sort{
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 1rem;
+}
+
+button, input{
+    padding: .5rem;
+    border-radius: .5rem;
+
+}
+
+button{
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+button:hover{
+    background-color: grey;
+    color: black;
+}
+
+#list1{
+    
+    padding: 1rem;
+}
+
+#list2{
+    list-style: none;
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid blue;
+
+}
+
+#deletebox{
+    margin-left: 4rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+#I-screen{
+    margin-left: 1rem;
+    margin-right: 1rem ;
+    
+}
+
+#completebox{
+    margin-right: 4rem;
+    padding: 1rem;
+}
