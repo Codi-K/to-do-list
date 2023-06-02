@@ -3,6 +3,7 @@ let adding = document.querySelector("#add1")
 let clientAnswer = document.querySelector("#I-screen")
 let clientOutput = document.querySelector("#list")
 let clientList = []
+let checkbox = document.querySelector("#completebox")
 // let data = [{
 //     id: 1,
 //     name: clientList[0],
@@ -17,10 +18,7 @@ adding.addEventListener("click", (e)=>{
     if(clientAnswer.value){
         clientList.push(clientAnswer.value)
         clientList.value = "" 
-    } if (clientList[0]){
-        clientList(data[0].name)
-        data[0].name = clientList
-    }
+    } 
     else{
         clientAnswer.style = "outline: 3px solid red"
     }
@@ -33,7 +31,18 @@ adding.addEventListener("click", ()=>{
     clientList = JSON.parse (localStorage.getItem("items"))
     clientList.forEach((items) =>{
         clientOutput.innerHTML +=`
-        <li><input class="completebox" type="checkbox">${items} <button class="deletebox">x</button></li>`
+        <li id="list2"><input id="completebox" type="checkbox">${items} <button id="deletebox">x</button></li>`
         
       })
   })
+
+checkbox.addEventListener("click", ()=>{
+    checkbox.style= "text-decoration: line-through"
+})
+
+//   if (clientList[0]){
+//     clientList(data[0].name)
+//     data[0].name = clientList
+// }
+
+
